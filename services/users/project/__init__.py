@@ -14,6 +14,7 @@ app = Flask(__name__)
 app_settings = os.getenv('APP_SETTINGS')
 app.config.from_object(app_settings)
 
+
 # instantiate the db
 db = SQLAlchemy(app)
 
